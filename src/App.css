@@ -1,38 +1,21 @@
-.App {
-  text-align: center;
+/* Scrollbar container */
+::-webkit-scrollbar {
+  width: 8px; /* Width of the scrollbar */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Track (the background of the scrollbar) */
+::-webkit-scrollbar-track {
+  background: #44444416; /* Dark gray background */
+  border-radius: 10px; /* Rounded corners */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Scrollbar thumb (the part that you drag) */
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom, #626f7a, #101111); /* Gradient */
+  border-radius: 10px; /* Rounded corners for smoothness */
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Thumb hover effect */
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(to bottom, #2f353a, #0f1012); /* Darker gradient on hover */
 }
